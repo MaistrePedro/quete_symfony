@@ -26,7 +26,7 @@ class WildController extends AbstractController
 
     /**
      * @param $slug
-     * @Route("/show/{slug}", name="show", requirements={"slug"="[a-z-]"})
+     * @Route("/show/{slug}", name="show", requirements={"slug"="[a-z-]*"})
      */
     public function show($slug) {
         $title = ucwords(str_replace('-', ' ', $slug), ' ');
